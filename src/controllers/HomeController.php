@@ -6,8 +6,8 @@ use \core\Controller;
 class HomeController extends Controller {
 
     public function index() {
-        $nome = 'Carlos';
-        $this->render('home',['nome'=>$nome]);
+        
+        $this->render('home');
     }
 
     public function sobre() {
