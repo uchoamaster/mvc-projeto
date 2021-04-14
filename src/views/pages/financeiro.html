@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>$IMPLES | Dashboard </title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- IonIcons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="dist/css/estilo.css">
+    <link href="dist/demo/css/demo.css" rel="stylesheet">
+    <link href="dist/css/chrome-tabs.css" rel="stylesheet">
+    <link href="dist/css/chrome-tabs-dark-theme.css" rel="stylesheet">
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="././plugins/daterangepicker/daterangepicker.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="././plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="././plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="././plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="././plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="././plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="././plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+    <!-- BS Stepper -->
+    <link rel="stylesheet" href="././plugins/bs-stepper/css/bs-stepper.min.css">
+    <!-- dropzonejs -->
+    <link rel="stylesheet" href="././plugins/dropzone/min/dropzone.min.css">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="././dist/img/S_LOGO.png">
+</head>
+<!--
+`body` tag options:
+
+  Apply one or more of the following classes to to the body tag
+  to get the desired effect
+
+  * sidebar-collapse
+  * sidebar-mini
+-->
+
+<body class="hold-transition sidebar-mini layout-navbar-fixed">
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <!-- Main content -->
+
+                <div class="container-fluid">
+
+
+                    <div class="surface col-xl-12">
+                        <div class="mock-browser">
+                            <div class="chrome-tabs" style="--tab-content-margin: 9px">
+                                <div class="chrome-tabs-content">
+                                    <div class="chrome-tab" active>
+                                        <div class="chrome-tab-dividers"></div>
+                                        <div class="chrome-tab-background">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><symbol id="chrome-tab-geometry-left" viewBox="0 0 214 36"><path d="M17 0h197v36H0v-2c4.5 0 9-3.5 9-8V8c0-4.5 3.5-8 8-8z"/></symbol><symbol id="chrome-tab-geometry-right" viewBox="0 0 214 36"><use xlink:href="#chrome-tab-geometry-left"/></symbol><clipPath id="crop"><rect class="mask" width="100%" height="100%" x="0"/></clipPath></defs><svg width="52%" height="100%"><use xlink:href="#chrome-tab-geometry-left" width="214" height="36" class="chrome-tab-geometry"/></svg>
+                                            <g transform="scale(-1, 1)"><svg width="52%" height="100%" x="-100%" y="0"><use xlink:href="#chrome-tab-geometry-right" width="214" height="36" class="chrome-tab-geometry"/></svg></g>
+                                            </svg>
+                                        </div>
+                                        <div class="chrome-tab-content">
+                                            <div class="chrome-tab-favicon"></div>
+                                            <div class="chrome-tab-title">Guia Atual</div>
+                                            <div class="chrome-tab-drag-handle"></div>
+                                            <div class="chrome-tab-close"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="chrome-tabs-bottom-bar"></div>
+                                <!-- Styles to prevent flash after JS initialization -->
+
+                            </div>
+                            <div class="chrome-tabs-optional-shadow-below-bottom-bar"></div>
+                            <div class="mock-browser-content">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </ul>
+
+
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Navbar Search -->
+                <li class="nav-item">
+
+                </li>
+
+                <!-- Messages Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-comments"></i>
+                        <span class="badge badge-danger navbar-badge">3</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <div class="media">
+                                <img src="././dist/img/uchoa2.png" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Carlos Uchôa
+                                        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">Me ligue precisamos conversar ...</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Horas atrás</p>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <div class="media">
+                                <img src="././dist/img/uchoa2.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Carlos Uchôa
+                                        <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">Reunião as 16 Horas</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Horas atrás</p>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <div class="media">
+                                <img src="././dist/img/uchoa2.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Carlos Uchôa
+                                        <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">Cliente lorempisom precisa ...</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Horas atrás</p>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">Ver todas as Mensagens</a>
+                    </div>
+                </li>
+                <!-- Notifications Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-bell"></i>
+                        <span class="badge badge-warning navbar-badge">15</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-item dropdown-header">15 Notificações</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i> 4 mensagens novas
+                            <span class="float-right text-muted text-sm">3 mins</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-users mr-2"></i> 8 convites de amigos
+                            <span class="float-right text-muted text-sm">12 horas</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-file mr-2"></i> 3 novos tickets
+                            <span class="float-right text-muted text-sm">2 dias</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">Ver todas as Notificações</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-users mr-2"></i> Meu Perfil
+
+                        </a>
+
+
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-star mr-2"></i> Meus Favoritos
+
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-sign-out-alt mr-2"></i> Sair
+
+                        </a>
+
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="index3.html" class="brand-link">
+                <img src="dist/img/S_LOGO.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">IMPLES</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex" title="Meu Perfil" style="cursor:pointer">
+                    <div class="image">
+                        <img src="./dist/img/uchoa2.png" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="../freeline/pages/forms/profile.html" class="d-block">Carlos Uchôa</a>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- SidebarSearch Form -->
+                <div class="form-inline">
+                    <div class="input-group" data-widget="sidebar-search">
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                        <li class="nav-item menu-open">
+
+                            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                                <!-- Add icons to the links using the .nav-icon class
+                   with font-awesome or any other icon font library -->
+                                <li class="nav-item menu-open">
+
+                                    <ul class="nav nav-treeview">
+
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../freeline/pages/UI/favoritos.html" class="nav-link">
+                                        <i class="nav-icon fas fa-star"></i>
+                                        <p>
+                                            Favoritos
+                                            <span class="right badge badge-danger">Novo</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../freeline/pages/forms/cad-pessoas.html" class="nav-link">
+                                        <i class="nav-icon far fa-address-card"></i>
+                                        <p>
+                                            Cadastros
+                                            <span class="right badge badge-danger">Novo</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link">
+                                        <i class="nav-icon far fa-money-bill-alt"></i>
+                                        <p>
+                                            Financeiro
+                                            <span class="right badge badge-danger">Novo</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fas fa-chart-line"></i>
+                                        <p>
+                                            Gerencial
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fas fa-book"></i>
+                                        <p>
+                                            RH
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fas fa-sort-amount-up"></i>
+                                        <p>
+                                            Entradas
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="nav-icon fas fa-sort-amount-down-alt"></i>
+                                        <p>
+                                            Saídas
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../freeline/pages/tables/relatorios.html" class="nav-link">
+                                        <i class="nav-icon fas fa-funnel-dollar"></i>
+                                        <p>
+                                            Relatórios
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="index3.html" class="nav-link" data-add-tab>
+                                        <i class="nav-icon fas fa-tools"></i>
+                                        <p>
+                                            Utilitários
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../freeline/calendario.html" class="nav-link">
+                                        <i class="nav-icon fas fa-calendar"></i>
+                                        <p>
+                                            Agenda Pessoal
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../freeline/helper.html" class="nav-link">
+                                        <i class="nav-icon fas fa-question-circle"></i>
+                                        <p>
+                                            Ajuda
+                                        </p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+
+
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-9">
+                            <h3 class="m-0 mt-4">TECH STORE 35.115.712/0001-30
+                                <span class="col-sm-6" id="hours"></span>
+                            </h3>
+
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-sm-3 col-md-3">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active">Dashboard</li>
+                            </ol>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <!-- Small boxes (Stat box) -->
+                    <div class="row">
+                        <div class="col-lg-3 col-6">
+                            <!-- small box -->
+                            <div class="small-box bg-info">
+                                <div class="inner">
+                                    <h3>150</h3>
+
+                                    <p>Novos Pedidos</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-bag"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">+ info <i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                        <div class="col-lg-3 col-6">
+                            <!-- small box -->
+                            <div class="small-box bg-success">
+                                <div class="inner">
+                                    <h3>53<sup style="font-size: 20px">%</sup></h3>
+
+                                    <p>Aumento de vendas</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-stats-bars"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">+ info <i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                        <div class="col-lg-3 col-6">
+                            <!-- small box -->
+                            <div class="small-box bg-warning">
+                                <div class="inner">
+                                    <h3>44</h3>
+
+                                    <p>Novos usuários registrados</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-person-add"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">+ info <i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                        <div class="col-lg-3 col-6">
+                            <!-- small box -->
+                            <div class="small-box bg-danger">
+                                <div class="inner">
+                                    <h3>65</h3>
+
+                                    <p>Visitantes novos</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-pie-graph"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">+ info <i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- ./col -->
+                    </div>
+                    <!-- /.row -->
+                    <!-- Main row -->
+                    <div class="row">
+
+                        <!-- Main content -->
+                        <section class="content">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 col-lg-12">
+                                        <!-- AREA CHART -->
+                                        <div class="card card-primary">
+                                            <div class="card-header">
+                                                <h3 class="card-title">Vendas no Semestre</h3>
+
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+                                                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                  <i class="fas fa-times"></i>
+                </button>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="chart">
+                                                    <canvas id="areaChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                                                </div>
+                                            </div>
+                                            <!-- /.card-body -->
+                                        </div>
+                                        <!-- /.card -->
+
+                                        <!-- DONUT CHART -->
+                                        <div class="card card-danger">
+                                            <div class="card-header">
+                                                <h3 class="card-title">Navegadores utilizados no sistema </h3>
+
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+                                                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                  <i class="fas fa-times"></i>
+                </button>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <canvas id="donutChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                                            </div>
+                                            <!-- /.card-body -->
+                                        </div>
+                                        <!-- /.card -->
+
+                                        <!-- PIE CHART -->
+                                        <div class="card card-danger">
+                                            <div class="card-header">
+                                                <h3 class="card-title">Quantidade de usuários por navegador</h3>
+
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+                                                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                  <i class="fas fa-times"></i>
+                </button>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <canvas id="pieChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                                            </div>
+                                            <!-- /.card-body -->
+                                        </div>
+                                        <!-- /.card -->
+
+                                    </div>
+                                    <!-- /.col (LEFT) -->
+                                    <div class="col-sm-12 col-md-12 col-lg-12">
+                                        <!-- LINE CHART -->
+                                        <div class="card card-info">
+                                            <div class="card-header">
+                                                <h3 class="card-title">Total no semestre por vendedor</h3>
+
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+                                                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                  <i class="fas fa-times"></i>
+                </button>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="chart">
+                                                    <canvas id="lineChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                                                </div>
+                                            </div>
+                                            <!-- /.card-body -->
+                                        </div>
+                                        <!-- /.card -->
+
+                                        <!-- BAR CHART -->
+                                        <div class="card card-success">
+                                            <div class="card-header">
+                                                <h3 class="card-title">Total Anual</h3>
+
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+                                                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                  <i class="fas fa-times"></i>
+                </button>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="chart">
+                                                    <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                                                </div>
+                                            </div>
+                                            <!-- /.card-body -->
+                                        </div>
+                                        <!-- /.card -->
+
+                                        <!-- STACKED BAR CHART -->
+                                        <div class="card card-success">
+                                            <div class="card-header">
+                                                <h3 class="card-title">Total vendas</h3>
+
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+                                                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                  <i class="fas fa-times"></i>
+                </button>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="chart">
+                                                    <canvas id="stackedBarChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                                                </div>
+                                            </div>
+                                            <!-- /.card-body -->
+                                        </div>
+                                        <!-- /.card -->
+
+                                    </div>
+                                    <!-- /.col (RIGHT) -->
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- /.container-fluid -->
+                        </section>
+                        <!-- /.content -->
+
+
+            </section>
+            <!-- right col -->
+            </div>
+            <!-- /.row (main row) -->
+            </div>
+            <!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+
+    </div>
+    <!-- ./wrapper -->
+    <script>
+        function showTime() {
+            let d = new Date();
+            let a = d.getFullYear();
+            let mes = ("0" + (d.getMonth() + 1)).slice(-2);
+            let dia = ("0" + (d.getDate())).slice(-2);
+            let h = ("0" + (d.getHours())).slice(-2);
+            let min = ("0" + (d.getMinutes())).slice(-2);
+            let s = ("0" + (d.getSeconds())).slice(-2);
+            let txt = '' + dia + '/ ' + mes + '/ ' + a + ' ' + h + ':' + min + ':' + s;
+            document.querySelector('#hours').innerHTML = txt;
+        }
+        let timer = setInterval(showTime, 1000);
+    </script>
+
+    <!-- REQUIRED SCRIPTS -->
+    <script src="https://unpkg.com/draggabilly@2.2.0/dist/draggabilly.pkgd.min.js"></script>
+    <script src="dist/js/chrome-tabs.js"></script>
+    <script>
+        var el = document.querySelector('.chrome-tabs')
+        var chromeTabs = new ChromeTabs()
+
+        chromeTabs.init(el)
+
+        el.addEventListener('activeTabChange', ({
+            detail
+        }) => console.log('Active tab changed', detail.tabEl))
+        el.addEventListener('tabAdd', ({
+            detail
+        }) => console.log('Tab added', detail.tabEl))
+        el.addEventListener('tabRemove', ({
+            detail
+        }) => console.log('Tab removed', detail.tabEl))
+
+        document.querySelector('a[data-add-tab]').addEventListener('click', _ => {
+            chromeTabs.addTab({
+                title: 'Nova Aba',
+                favicon: false
+            })
+        })
+
+        document.querySelector('a[data-add-background-tab]').addEventListener('click', _ => {
+            chromeTabs.addTab({
+                title: 'Nova Aba',
+                favicon: false
+            }, {
+                background: true
+            })
+        })
+
+        document.querySelector('a[data-remove-tab]').addEventListener('click', _ => {
+            chromeTabs.removeTab(chromeTabs.activeTabEl)
+        })
+
+        document.querySelector('a[data-theme-toggle]').addEventListener('click', _ => {
+            if (el.classList.contains('chrome-tabs-dark-theme')) {
+                document.documentElement.classList.remove('dark-theme')
+                el.classList.remove('chrome-tabs-dark-theme')
+            } else {
+                document.documentElement.classList.add('dark-theme')
+                el.classList.add('chrome-tabs-dark-theme')
+            }
+        })
+
+        window.addEventListener('keydown', (event) => {
+            if (event.ctrlKey && event.key === 't') {
+                chromeTabs.addTab({
+                    title: 'New Tab',
+                    favicon: false
+                })
+            }
+        })
+    </script>
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE -->
+    <script src="dist/js/adminlte.js"></script>
+    <!-- ChartJS -->
+    <script src="././plugins/chart.js/Chart.min.js"></script>
+    <!-- OPTIONAL SCRIPTS -->
+    <script src="plugins/chart.js/Chart.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/dashboard3.js"></script>
+    <script>
+        $(function() {
+            /* ChartJS
+             * -------
+             * Here we will create a few charts using ChartJS
+             */
+
+            //--------------
+            //- AREA CHART -
+            //--------------
+
+            // Get context with jQuery - using jQuery's .get() method.
+            var areaChartCanvas = $('#areaChart').get(0).getContext('2d')
+
+            var areaChartData = {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'Digital Goods',
+                    backgroundColor: 'rgba(60,141,188,0.9)',
+                    borderColor: 'rgba(60,141,188,0.8)',
+                    pointRadius: false,
+                    pointColor: '#3b8bba',
+                    pointStrokeColor: 'rgba(60,141,188,1)',
+                    pointHighlightFill: '#fff',
+                    pointHighlightStroke: 'rgba(60,141,188,1)',
+                    data: [28, 48, 40, 19, 86, 27, 90]
+                }, {
+                    label: 'Electronics',
+                    backgroundColor: 'rgba(210, 214, 222, 1)',
+                    borderColor: 'rgba(210, 214, 222, 1)',
+                    pointRadius: false,
+                    pointColor: 'rgba(210, 214, 222, 1)',
+                    pointStrokeColor: '#c1c7d1',
+                    pointHighlightFill: '#fff',
+                    pointHighlightStroke: 'rgba(220,220,220,1)',
+                    data: [65, 59, 80, 81, 56, 55, 40]
+                }, ]
+            }
+
+            var areaChartOptions = {
+                maintainAspectRatio: false,
+                responsive: true,
+                legend: {
+                    display: false
+                },
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            display: false,
+                        }
+                    }],
+                    yAxes: [{
+                        gridLines: {
+                            display: false,
+                        }
+                    }]
+                }
+            }
+
+            // This will get the first returned node in the jQuery collection.
+            new Chart(areaChartCanvas, {
+                type: 'line',
+                data: areaChartData,
+                options: areaChartOptions
+            })
+
+            //-------------
+            //- LINE CHART -
+            //--------------
+            var lineChartCanvas = $('#lineChart').get(0).getContext('2d')
+            var lineChartOptions = $.extend(true, {}, areaChartOptions)
+            var lineChartData = $.extend(true, {}, areaChartData)
+            lineChartData.datasets[0].fill = false;
+            lineChartData.datasets[1].fill = false;
+            lineChartOptions.datasetFill = false
+
+            var lineChart = new Chart(lineChartCanvas, {
+                type: 'line',
+                data: lineChartData,
+                options: lineChartOptions
+            })
+
+            //-------------
+            //- DONUT CHART -
+            //-------------
+            // Get context with jQuery - using jQuery's .get() method.
+            var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
+            var donutData = {
+                labels: [
+                    'Chrome',
+                    'IE',
+                    'FireFox',
+                    'Safari',
+                    'Opera',
+                    'Navigator',
+                ],
+                datasets: [{
+                    data: [700, 500, 400, 600, 300, 100],
+                    backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de'],
+                }]
+            }
+            var donutOptions = {
+                    maintainAspectRatio: false,
+                    responsive: true,
+                }
+                //Create pie or douhnut chart
+                // You can switch between pie and douhnut using the method below.
+            new Chart(donutChartCanvas, {
+                type: 'doughnut',
+                data: donutData,
+                options: donutOptions
+            })
+
+            //-------------
+            //- PIE CHART -
+            //-------------
+            // Get context with jQuery - using jQuery's .get() method.
+            var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
+            var pieData = donutData;
+            var pieOptions = {
+                    maintainAspectRatio: false,
+                    responsive: true,
+                }
+                //Create pie or douhnut chart
+                // You can switch between pie and douhnut using the method below.
+            new Chart(pieChartCanvas, {
+                type: 'pie',
+                data: pieData,
+                options: pieOptions
+            })
+
+            //-------------
+            //- BAR CHART -
+            //-------------
+            var barChartCanvas = $('#barChart').get(0).getContext('2d')
+            var barChartData = $.extend(true, {}, areaChartData)
+            var temp0 = areaChartData.datasets[0]
+            var temp1 = areaChartData.datasets[1]
+            barChartData.datasets[0] = temp1
+            barChartData.datasets[1] = temp0
+
+            var barChartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                datasetFill: false
+            }
+
+            new Chart(barChartCanvas, {
+                type: 'bar',
+                data: barChartData,
+                options: barChartOptions
+            })
+
+            //---------------------
+            //- STACKED BAR CHART -
+            //---------------------
+            var stackedBarChartCanvas = $('#stackedBarChart').get(0).getContext('2d')
+            var stackedBarChartData = $.extend(true, {}, barChartData)
+
+            var stackedBarChartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    xAxes: [{
+                        stacked: true,
+                    }],
+                    yAxes: [{
+                        stacked: true
+                    }]
+                }
+            }
+
+            new Chart(stackedBarChartCanvas, {
+                type: 'bar',
+                data: stackedBarChartData,
+                options: stackedBarChartOptions
+            })
+        })
+    </script>
+</body>
+
+</html>
