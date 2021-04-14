@@ -50,7 +50,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../freeline/pages/UI/favoritos.html" class="nav-link">
+                                    <a href="<?=$base;?>/" class="nav-link">
                                         <i class="nav-icon fas fa-star"></i>
                                         <p>
                                             Favoritos
@@ -59,7 +59,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../freeline/pages/forms/cad-pessoas.html" class="nav-link">
+                                    <a href="<?=$base;?>/" class="nav-link">
                                         <i class="nav-icon far fa-address-card"></i>
                                         <p>
                                             Cadastros
@@ -68,7 +68,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="financeiro.html" class="nav-link">
+                                    <a href="<?=$base;?>/" class="nav-link">
                                         <i class="nav-icon far fa-money-bill-alt"></i>
                                         <p>
                                             Financeiro
@@ -77,7 +77,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="<?=$base;?>/" class="nav-link">
                                         <i class="nav-icon fas fa-chart-line"></i>
                                         <p>
                                             Gerencial
@@ -85,7 +85,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="<?=$base;?>/" class="nav-link">
                                         <i class="nav-icon fas fa-book"></i>
                                         <p>
                                             RH
@@ -93,7 +93,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="<?=$base;?>/" class="nav-link">
                                         <i class="nav-icon fas fa-sort-amount-up"></i>
                                         <p>
                                             Entradas
@@ -101,7 +101,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="<?=$base;?>/" class="nav-link">
                                         <i class="nav-icon fas fa-sort-amount-down-alt"></i>
                                         <p>
                                             Saídas
@@ -109,7 +109,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../freeline/pages/tables/relatorios.html" class="nav-link">
+                                    <a href="<?=$base;?>/" class="nav-link">
                                         <i class="nav-icon fas fa-funnel-dollar"></i>
                                         <p>
                                             Relatórios
@@ -117,7 +117,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="<?=$base;?>/" class="nav-link">
                                         <i class="nav-icon fas fa-tools"></i>
                                         <p>
                                             Utilitários
@@ -125,7 +125,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../freeline/calendario.html" class="nav-link">
+                                    <a href="<?=$base;?>/" class="nav-link">
                                         <i class="nav-icon fas fa-calendar"></i>
                                         <p>
                                             Agenda Pessoal
@@ -133,7 +133,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../freeline/helper.html" class="nav-link">
+                                    <a href="<?=$base;?>/" class="nav-link">
                                         <i class="nav-icon fas fa-question-circle"></i>
                                         <p>
                                             Ajuda

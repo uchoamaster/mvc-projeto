@@ -28,7 +28,7 @@
             <section class="content">
                 <div class="error-page">
                     <h2 class="headline text-warning"> 404</h2>
-                    <h3>BASE: <?php echo $base; ?></h3>
+                    
 
                     <div class="error-content">
                         <h3><i class="fas fa-exclamation-triangle text-warning"></i> Oops! Está página não existe.</h3>
