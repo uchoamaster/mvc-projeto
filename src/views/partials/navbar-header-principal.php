@@ -166,7 +166,7 @@
 
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
+                        <a href="/mvc/public/login" class="dropdown-item">
                             <i class="fas fa-sign-out-alt mr-2"></i> Sair
 
                         </a>
