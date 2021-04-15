@@ -17,6 +17,19 @@ class HomeController extends Controller {
     public function favoritos() {
         $this->render('favoritos');
     }
+
+    public function cadastros() {
+        $this->render('cadastros');
+    }
+
+    public function cadcidades() {
+        $this->render('cad-cidades');
+    }
+
+    public function financeiro() {
+        $this->render('financeiro');
+    }
+
     public function sobre() {
         $this->render('sobre');
     }
