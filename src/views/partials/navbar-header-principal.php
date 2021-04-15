@@ -66,7 +66,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="././dist/img/uchoa2.png" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                                <img src="<?=$base;?>/dist/img/uchoa2.png" alt="User Avatar" class="img-size-50 mr-3 img-circle">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Carlos Uchôa
@@ -82,7 +82,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="././dist/img/uchoa2.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <img src="<?=$base;?>/dist/img/uchoa2.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Carlos Uchôa
@@ -98,7 +98,7 @@
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="././dist/img/uchoa2.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <img src="<?=$base;?>/dist/img/uchoa2.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Carlos Uchôa
@@ -138,7 +138,7 @@
                             <span class="float-right text-muted text-sm">2 dias</span>
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item dropdown-footer">Ver todas as Notificações</a>
+                        <a href="<?=$base;?>/notificacoes" class="dropdown-item dropdown-footer">Ver todas as Notificações</a>
                     </div>
                 </li>
 
@@ -154,14 +154,14 @@
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
 
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
+                        <a href="<?=$base;?>/perfil" class="dropdown-item">
                             <i class="fas fa-users mr-2"></i> Meu Perfil
 
                         </a>
 
 
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
+                        <a href="<?=$base;?>/favoritos" class="dropdown-item">
                             <i class="fas fa-star mr-2"></i> Meus Favoritos
 
                         </a>

@@ -30,12 +30,36 @@ class HomeController extends Controller {
         $this->render('financeiro');
     }
 
-    public function sobre() {
-        $this->render('sobre');
+    public function gerencial() {
+        $this->render('gerencial');
     }
 
-    public function sobreP($args) {
-        print_r($args);
+    public function rh() {
+        $this->render('rh');
+    }
+
+    public function entradas() {
+        $this->render('entradas');
+    }
+
+    public function saidas() {
+        $this->render('saidas');
+    }
+
+    public function relatorios() {
+        $this->render('relatorios');
+    }
+
+    public function utilitarios() {
+        $this->render('utilitarios');
+    }
+
+    public function agendapessoal() {
+        $this->render('agenda-pessoal');
+    }
+
+    public function ajuda() {
+        $this->render('ajuda');
     }
 
     //acesso
