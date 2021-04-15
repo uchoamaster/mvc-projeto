@@ -9,32 +9,43 @@
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="<?=$base;?>/plugins/fontawesome-free/css/all.min.css">
     <!-- IonIcons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="./../public/dist/css/adminlte.min.css">
-    <link rel="stylesheet" href="./../public/dist/css/estilo.css">
-    <link href="./../public/dist/demo/css/demo.css" rel="stylesheet">
-    <link href="./../public/dist/css/chrome-tabs.css" rel="stylesheet">
-    <link href="./../public/dist/css/chrome-tabs-dark-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?=$base;?>/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="<?=$base;?>/dist/css/estilo.css">
+    <link href="<?=$base;?>/dist/demo/css/demo.css" rel="stylesheet">
+    <link href="<?=$base;?>/dist/css/chrome-tabs.css" rel="stylesheet">
+    <link href="<?=$base;?>/dist/css/chrome-tabs-dark-theme.css" rel="stylesheet">
+
+
+ 
+
     <!-- daterange picker -->
-    <link rel="stylesheet" href="./../public/plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="<?=$base;?>/plugins/daterangepicker/daterangepicker.css">
     <!-- iCheck for checkboxes and radio inputs -->
-    <link rel="stylesheet" href="./../public/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="<?=$base;?>/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- Bootstrap Color Picker -->
-    <link rel="stylesheet" href="./../public/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <link rel="stylesheet" href="<?=$base;?>/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
     <!-- Tempusdominus Bootstrap 4 -->
-    <link rel="stylesheet" href="./../public/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="<?=$base;?>/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
     <!-- Select2 -->
-    <link rel="stylesheet" href="./../public/plugins/select2/css/select2.min.css">
-    <link rel="stylesheet" href="./../public/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <link rel="stylesheet" href="<?=$base;?>/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="<?=$base;?>/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
     <!-- Bootstrap4 Duallistbox -->
-    <link rel="stylesheet" href="./../public/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+    <link rel="stylesheet" href="<?=$base;?>/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
     <!-- BS Stepper -->
-    <link rel="stylesheet" href="./../public/plugins/bs-stepper/css/bs-stepper.min.css">
+    <link rel="stylesheet" href="<?=$base;?>/plugins/bs-stepper/css/bs-stepper.min.css">
     <!-- dropzonejs -->
-    <link rel="stylesheet" href="./../public/plugins/dropzone/min/dropzone.min.css">
+    <link rel="stylesheet" href="<?=$base;?>/plugins/dropzone/min/dropzone.min.css">
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="<?=$base;?>/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <!-- Toastr -->
+    <link rel="stylesheet" href="<?=$base;?>/plugins/toastr/toastr.min.css">
+    <!-- jsGrid -->
+    <link rel="stylesheet" href="<?=$base;?>/plugins/jsgrid/jsgrid.min.css">
+    <link rel="stylesheet" href="<?=$base;?>/plugins/jsgrid/jsgrid-theme.min.css">
     <!--Favicon-->
-    <link rel="icon" type="image/png" href="./../public/dist/img/S_LOGO.png">
+    <link rel="icon" type="image/png" href="<?=$base;?>/public/dist/img/S_LOGO.png">
 </head>
