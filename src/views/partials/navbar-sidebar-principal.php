@@ -1,8 +1,8 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index3.html" class="brand-link">
-                <img src="dist/img/S_LOGO.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+            <a href="<?=$base;?>/" class="brand-link">
+                <img src="<?=$base;?>/dist/img/S_LOGO.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">IMPLES</span>
             </a>
 
@@ -11,10 +11,10 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="././dist/img/uchoa2.png" class="img-circle elevation-2" alt="User Image">
+                        <img src="<?=$base;?>/dist/img/uchoa2.png" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="../freeline/pages/forms/profile.html" class="d-block">Carlos Uchôa</a>
+                        <a href="<?=$base;?>/perfil" class="d-block">Carlos Uchôa</a>
                     </div>
                 </div>
 
@@ -50,7 +50,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?=$base;?>/" class="nav-link">
+                                    <a href="<?=$base;?>/favoritos" class="nav-link">
                                         <i class="nav-icon fas fa-star"></i>
                                         <p>
                                             Favoritos
@@ -59,7 +59,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?=$base;?>/" class="nav-link">
+                                    <a href="<?=$base;?>/cad-cidades" class="nav-link">
                                         <i class="nav-icon far fa-address-card"></i>
                                         <p>
                                             Cadastros
@@ -68,7 +68,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?=$base;?>/" class="nav-link">
+                                    <a href="<?=$base;?>/financeiro" class="nav-link">
                                         <i class="nav-icon far fa-money-bill-alt"></i>
                                         <p>
                                             Financeiro
@@ -77,7 +77,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?=$base;?>/" class="nav-link">
+                                    <a href="<?=$base;?>/gerencial" class="nav-link">
                                         <i class="nav-icon fas fa-chart-line"></i>
                                         <p>
                                             Gerencial
@@ -85,7 +85,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?=$base;?>/" class="nav-link">
+                                    <a href="<?=$base;?>/rh" class="nav-link">
                                         <i class="nav-icon fas fa-book"></i>
                                         <p>
                                             RH
@@ -93,7 +93,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?=$base;?>/" class="nav-link">
+                                    <a href="<?=$base;?>/entradas" class="nav-link">
                                         <i class="nav-icon fas fa-sort-amount-up"></i>
                                         <p>
                                             Entradas
@@ -101,7 +101,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?=$base;?>/" class="nav-link">
+                                    <a href="<?=$base;?>/saidas" class="nav-link">
                                         <i class="nav-icon fas fa-sort-amount-down-alt"></i>
                                         <p>
                                             Saídas
@@ -109,7 +109,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?=$base;?>/" class="nav-link">
+                                    <a href="<?=$base;?>/relatorios" class="nav-link">
                                         <i class="nav-icon fas fa-funnel-dollar"></i>
                                         <p>
                                             Relatórios
@@ -117,7 +117,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?=$base;?>/" class="nav-link">
+                                    <a href="<?=$base;?>/utilitarios" class="nav-link">
                                         <i class="nav-icon fas fa-tools"></i>
                                         <p>
                                             Utilitários
@@ -125,7 +125,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?=$base;?>/" class="nav-link">
+                                    <a href="<?=$base;?>/agenda-pessoal" class="nav-link">
                                         <i class="nav-icon fas fa-calendar"></i>
                                         <p>
                                             Agenda Pessoal
@@ -133,7 +133,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?=$base;?>/" class="nav-link">
+                                    <a href="<?=$base;?>/ajuda" class="nav-link">
                                         <i class="nav-icon fas fa-question-circle"></i>
                                         <p>
                                             Ajuda

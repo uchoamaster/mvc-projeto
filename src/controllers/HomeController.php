@@ -10,6 +10,13 @@ class HomeController extends Controller {
         $this->render('home');
     }
 
+    public function perfil() {
+        $this->render('perfil');
+    }
+
+    public function favoritos() {
+        $this->render('favoritos');
+    }
     public function sobre() {
         $this->render('sobre');
     }
