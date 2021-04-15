@@ -18,10 +18,10 @@
     <link href="<?=$base;?>/dist/demo/css/demo.css" rel="stylesheet">
     <link href="<?=$base;?>/dist/css/chrome-tabs.css" rel="stylesheet">
     <link href="<?=$base;?>/dist/css/chrome-tabs-dark-theme.css" rel="stylesheet">
-
-
- 
-
+    <!-- DataTables -->
+    <link rel="stylesheet" href="<?=$base;?>/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?=$base;?>/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?=$base;?>/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
     <!-- daterange picker -->
     <link rel="stylesheet" href="<?=$base;?>/plugins/daterangepicker/daterangepicker.css">
     <!-- iCheck for checkboxes and radio inputs -->
@@ -46,6 +46,10 @@
     <!-- jsGrid -->
     <link rel="stylesheet" href="<?=$base;?>/plugins/jsgrid/jsgrid.min.css">
     <link rel="stylesheet" href="<?=$base;?>/plugins/jsgrid/jsgrid-theme.min.css">
+    <link rel="stylesheet" href="<?=$base;?>/docs/assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="<?=$base;?>/docs/assets/css/docs.css">
+    <link rel="stylesheet" href="<?=$base;?>/docs/assets/css/highlighter.css">
+    <link rel="stylesheet" href="<?=$base;?>/docs/assets/css/adminlte.min.css">
     <!--Favicon-->
-    <link rel="icon" type="image/png" href="<?=$base;?>/public/dist/img/S_LOGO.png">
+    <link rel="icon" type="image/png" href="<?=$base;?>/dist/img/S_LOGO.png">
 </head>

@@ -67,6 +67,88 @@
             <script src="<?=$base;?>/dist/js/adminlte.min.js"></script>
             <!-- AdminLTE for demo purposes -->
             <script src="<?=$base;?>/dist/js/demo.js"></script>
+
+            <!-- DataTables  & Plugins -->
+            <script src="<?=$base;?>/plugins/datatables/jquery.dataTables.min.js"></script>
+            <script src="<?=$base;?>/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+            <script src="<?=$base;?>/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+            <script src="<?=$base;?>/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+            <script src="<?=$base;?>/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+            <script src="<?=$base;?>/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+            <script src="<?=$base;?>/plugins/jszip/jszip.min.js"></script>
+            <script src="<?=$base;?>/plugins/pdfmake/pdfmake.min.js"></script>
+            <script src="<?=$base;?>/plugins/pdfmake/vfs_fonts.js"></script>
+            <script src="<?=$base;?>/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+            <script src="<?=$base;?>/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+            <script src="<?=$base;?>/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+            
+            <script src="<?=$base;?>/docs/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="<?=$base;?>/docs/assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+            
+    <!-- Page specific script -->
+    <script>
+        $(function() {
+            $("#example1").DataTable({
+                "responsive": true,
+                "lengthChange": false,
+                "autoWidth": false,
+                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
+    <script>
+var toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+var currentTheme = localStorage.getItem('theme');
+var mainHeader = document.querySelector('.main-header');
+
+if (currentTheme) {
+if (currentTheme === 'dark') {
+    if (!document.body.classList.contains('dark-mode')) {
+        document.body.classList.add("dark-mode");
+    }
+    if (mainHeader.classList.contains('navbar-light')) {
+        mainHeader.classList.add('navbar-dark');
+        mainHeader.classList.remove('navbar-light');
+    }
+    toggleSwitch.checked = true;
+}
+}
+
+function switchTheme(e) {
+if (e.target.checked) {
+    if (!document.body.classList.contains('dark-mode')) {
+        document.body.classList.add("dark-mode");
+    }
+    if (mainHeader.classList.contains('navbar-light')) {
+        mainHeader.classList.add('navbar-dark');
+        mainHeader.classList.remove('navbar-light');
+    }
+    localStorage.setItem('theme', 'dark');
+} else {
+    if (document.body.classList.contains('dark-mode')) {
+        document.body.classList.remove("dark-mode");
+    }
+    if (mainHeader.classList.contains('navbar-dark')) {
+        mainHeader.classList.add('navbar-light');
+        mainHeader.classList.remove('navbar-dark');
+    }
+    localStorage.setItem('theme', 'light');
+}
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+</script>
+
 </body>
 
 </html>
