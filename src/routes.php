@@ -18,8 +18,7 @@ $router->get('/relatorios', 'HomeController@relatorios');
 $router->get('/utilitarios', 'HomeController@utilitarios');
 $router->get('/agenda-pessoal', 'HomeController@agendapessoal');
 $router->get('/ajuda', 'HomeController@ajuda');
-$router->get('/sobre/{nome}', 'HomeController@sobreP');
-$router->get('/sobre', 'HomeController@sobre');
+
 //rotas Controller Home Login
 $router->get('/login', 'HomeController@login');
 //rotas Controller Usuários
