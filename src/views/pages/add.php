@@ -15,7 +15,7 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form role="form" method="post" action="<?=$base;?>/novacidade">
+              <form role="form" method="POST" action="<?=$base;?>/novacidade">
                 <div class="card-body">
                   <div class="form-group">
                     <label for="codigo">Código</label>
