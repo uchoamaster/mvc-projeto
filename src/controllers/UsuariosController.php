@@ -6,8 +6,16 @@ use \core\Controller;
 class UsuariosController extends Controller {
 
     public function add() {
-        echo 'Add';
+        $this->render('add');
        
+    }
+
+    public function addAction(){
+
+        $codigo = filter_input(INPUT_POST, 'codigo');
+        $uf = filter_input(INPUT_POST, 'uf');
+        $nome = filter_input(INPUT_POST, 'nome');
+    
     }
 
 }

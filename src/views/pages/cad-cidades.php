@@ -1,3 +1,11 @@
+<?php 
+
+
+$sql = $pdo->query("SELECT * FROM cad_cidade");
+$cad_cidade = $sql->fetchAll();
+?>
+
+
 <?php $render('header-principal'); ?>
 <?php $render('navbar-header-principal'); ?>
 <?php $render('navbar-sidebar-principal'); ?>
@@ -49,18 +57,18 @@
                                                         <i class="far fa-file-excel"></i>
                                                     </button>
 
-                                                <button type="button" class="btn btn-success btn-sm mr-1" data-toggle="modal" data-target="#modal-lg" data-toggle="tooltip" title="Adicionar Novo">
+                                                <button type="button" class="btn btn-success btn-sm mr-1" data-toggle="modal" data-target="#modal-add" data-toggle="tooltip" title="Adicionar Novo">
                                                         <i class="fas fa-plus"></i>
                                                     </button>
 
-                                                <button type="button" class="btn btn-warning btn-sm mr-1" data-toggle="modal" data-target="#modal-lg2" data-toggle="tooltip" title="Editar">
+                                                <button type="button" class="btn btn-warning btn-sm mr-1" data-toggle="modal"  data-target="#modal-editar" data-toggle="tooltip" title="Editar">
                                                         <i class="fas fa-edit"></i>
                                                     </button>
                                             </div>
                                             <!-- fim botões de salvamento de arquivos -->
 
                                             <!-- inicio modal large -->
-                                            <div class="modal fade" id="modal-lg">
+                                            <div class="modal fade" id="modal-add">
                                                 <div class="modal-dialog modal-lg">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
@@ -225,7 +233,7 @@
                                             <!-- fim modal large -->
 
                                             <!-- inicio modal large 2-->
-                                            <div class="modal fade" id="modal-lg2">
+                                            <div class="modal fade" id="modal-editar">
                                                 <div class="modal-dialog modal-lg">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
@@ -356,183 +364,25 @@
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
+                                                                <?php  foreach($cad_cidade as $cad_cidade); ?>
                                                                     <tr>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            1200013
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">AC</td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            Acrelândia
-                                                                        </td>
-                                                                        <td>
+                                                                        <td data-toggle="modal" data-target="#modal-editar"><?php echo $cad_cidade['codigo'] ?></td>
+                                                                        <td data-toggle="modal" data-target="#modal-editar"><?php echo $cad_cidade['uf'] ?></td>
+                                                                        <td data-toggle="modal" data-target="#modal-editar"><?php echo $cad_cidade['nome'] ?></td>
+                                                                        <td data-toggle="modal" data-target="#modal-editar">
 
                                                                         </td>
+                                                                    
                                                                     </tr>
                                                                     <tr>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
+                                                                        <td data-toggle="modal" data-target="#modal-editar">
                                                                             1200013
                                                                         </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">AC</td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
+                                                                        <td data-toggle="modal" data-target="#modal-editar">AC</td>
+                                                                        <td data-toggle="modal" data-target="#modal-editar">
                                                                             Acrelândia
                                                                         </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            1200013
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">AC</td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            Acrelândia
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            1200013
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">AC</td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            Acrelândia
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            1200013
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">AC</td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            Acrelândia
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            1200013
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">AC</td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            Acrelândia
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            1200013
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">AC</td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            Acrelândia
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            1200013
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">AC</td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            Acrelândia
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            1200013
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">AC</td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            Acrelândia
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            1200013
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">AC</td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            Acrelândia
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            1200013
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">AC</td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            Acrelândia
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            1200013
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">AC</td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            Acrelândia
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            1200013
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">AC</td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            Acrelândia
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            1200013
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">AC</td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            Acrelândia
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            1200013
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">AC</td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
-                                                                            Acrelândia
-                                                                        </td>
-                                                                        <td data-toggle="modal" data-target="#modal-lg2">
+                                                                        <td data-toggle="modal" data-target="#modal-editar">
 
                                                                         </td>
                                                                     </tr>
@@ -834,6 +684,7 @@
         <!-- REQUIRED SCRIPTS -->
         <script src="https://unpkg.com/draggabilly@2.2.0/dist/draggabilly.pkgd.min.js"></script>
     <script src="<?=$base;?>/dist/js/chrome-tabs.js"></script>
+
     <script>
         var el = document.querySelector('.chrome-tabs')
         var chromeTabs = new ChromeTabs()
@@ -894,6 +745,8 @@
     <script src="<?=$base;?>/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="<?=$base;?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- javascript script.js -->
+    <script src="<?=$base;?>/dist/js/script.js"></script>
     <!-- SweetAlert2 -->
     <script src="<?=$base;?>/plugins/sweetalert2/sweetalert2.min.js"></script>
     <!-- Toastr -->

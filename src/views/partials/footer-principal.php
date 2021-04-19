@@ -65,6 +65,8 @@
             <script src="<?=$base;?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
             <!-- AdminLTE App -->
             <script src="<?=$base;?>/dist/js/adminlte.min.js"></script>
+            <!-- script.js -->
+            <script type="text/javascript" src="<?=$base;?>/dist/js/script.js"></script>
                         <!-- jQuery UI -->
             <script src="<?=$base;?>/plugins/jquery-ui/jquery-ui.min.js"></script>
             <!-- AdminLTE for demo purposes -->
@@ -90,6 +92,7 @@
                         <!-- fullCalendar 2.2.5 -->
             <script src="<?=$base;?>/plugins/moment/moment.min.js"></script>
             <script src="<?=$base;?>/plugins/fullcalendar/main.js"></script>
+            
     <!-- Page specific script -->
     <script>
         $(function() {

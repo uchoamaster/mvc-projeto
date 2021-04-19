@@ -59,6 +59,15 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
+                                    <a href="<?=$base;?>/add" class="nav-link">
+                                        <i class="nav-icon far fa-address-card"></i>
+                                        <p>
+                                            Cadastro Add
+                                            <span class="right badge badge-danger">Novo</span>
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
                                     <a href="<?=$base;?>/cad-cidades" class="nav-link">
                                         <i class="nav-icon far fa-address-card"></i>
                                         <p>

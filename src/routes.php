@@ -22,7 +22,8 @@ $router->get('/ajuda', 'HomeController@ajuda');
 //rotas Controller Home Login
 $router->get('/login', 'HomeController@login');
 //rotas Controller Usuários
-$router->get('/novacidade', 'UsuariosController@add');
+$router->get('/add', 'UsuariosController@add');
+$router->post('/novacidade', 'UsuariosController@addAction');
 
 
 
