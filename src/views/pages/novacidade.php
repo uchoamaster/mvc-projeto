@@ -39,8 +39,8 @@
                       <td><?=$cidade['codigo'];?></td>
                       <td><?=$cidade['uf'];?></td>
                       <td><?=$cidade['nome'];?></td>
-                      <td onclick="editar()"><i class="fas fa-edit"></i></td>
-                      <td onclick="deletar()"><i class="fas fa-trash"></i></td>
+                      <td><button id='editar'><i class="fas fa-edit"></i></button></td>
+                      <td><button id='excluir'><i class="fas fa-trash"></i></button></td>
                     </tr>
                     <?php endforeach; ?>
                   </tbody>
