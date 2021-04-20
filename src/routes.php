@@ -21,7 +21,7 @@ $router->get('/ajuda', 'HomeController@ajuda');
 
 //rotas Controller Home Login
 $router->get('/login', 'HomeController@login');
-//rotas Controller Usuários
+//rotas Controller Cidade
 $router->get('/add', 'CidadesController@add');
 $router->post('/novacidade', 'CidadesController@addAction');
 $router->get('/novacidade', 'CidadesController@novacidade');

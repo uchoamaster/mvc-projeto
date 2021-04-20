@@ -55,4 +55,6 @@
     <link rel="stylesheet" href="<?=$base;?>/docs/assets/css/adminlte.min.css">
     <!--Favicon-->
     <link rel="icon" type="image/png" href="<?=$base;?>/dist/img/S_LOGO.png">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 </head>

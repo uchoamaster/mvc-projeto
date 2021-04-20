@@ -11,7 +11,10 @@ class CidadesController extends Controller {
     }
 
     public function novacidade() {
-        $this->render('novacidade');
+        $cidades = Cidade::select()->execute();
+        $this->render('novacidade', [
+            'cidades'=> $cidades
+        ]);
     }
 
     public function addAction(){
@@ -30,13 +33,13 @@ class CidadesController extends Controller {
                     'nome' => $nome
                 ])->execute();
                 //redirect para / se salvar corretamente no bd
-                $this->redirect('/');
+                $this->redirect('/novacidade');
                
             }
 
         }
         //redirect para /novacidade caso não
-        $this->redirect('/novacidade');
+        $this->redirect('/add');
     }
 
  
