@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "clancats/hydrahon",
-            "version": "v1.1.12",
+            "version": "v1.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ClanCats/Hydrahon.git",
-                "reference": "cc2fc3fd2ea082a2d531a751da49cc6a413270cd"
+                "reference": "b1e1b2207ff57815a41e6832803cdc1d46e36f19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ClanCats/Hydrahon/zipball/cc2fc3fd2ea082a2d531a751da49cc6a413270cd",
-                "reference": "cc2fc3fd2ea082a2d531a751da49cc6a413270cd",
+                "url": "https://api.github.com/repos/ClanCats/Hydrahon/zipball/b1e1b2207ff57815a41e6832803cdc1d46e36f19",
+                "reference": "b1e1b2207ff57815a41e6832803cdc1d46e36f19",
                 "shasum": ""
             },
             "require": {
@@ -51,7 +51,11 @@
                 "query",
                 "sqlite"
             ],
-            "time": "2019-09-19T10:59:20+00:00"
+            "support": {
+                "issues": "https://github.com/ClanCats/Hydrahon/issues",
+                "source": "https://github.com/ClanCats/Hydrahon/tree/v1.1.14"
+            },
+            "time": "2020-09-30T14:43:29+00:00"
         }
     ],
     "packages-dev": [],
@@ -61,5 +65,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }

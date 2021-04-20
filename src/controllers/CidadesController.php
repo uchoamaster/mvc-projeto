@@ -10,31 +10,36 @@ class CidadesController extends Controller {
        
     }
 
+    public function novacidade() {
+        $this->render('novacidade');
+    }
+
     public function addAction(){
 
-        $codigo = filter_input(INPUT_POST, 'codigo');
+       
         $uf = filter_input(INPUT_POST, 'uf');
         $nome = filter_input(INPUT_POST, 'nome');
 
-        if($codigo && $uf && $nome){
-            $data = Cidade::select()->where('codigo', $codigo)->execute();
+        if( $uf && $nome){
+            $data = Cidade::select()->where('nome', $nome)->execute();
 
             if(count($data) === 0) {
                 //insere
                 Cidade::insert([
-                    'codigo' => $codigo,
                     'uf' => $uf,
                     'nome' => $nome
                 ])->execute();
-                //redirect para /
+                //redirect para / se salvar corretamente no bd
                 $this->redirect('/');
                
             }
 
         }
-        //redirect para /novacidade
+        //redirect para /novacidade caso não
         $this->redirect('/novacidade');
     }
+
+ 
 
 }
 

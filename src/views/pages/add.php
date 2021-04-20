@@ -17,17 +17,14 @@
               <!-- form start -->
               <form role="form" method="POST" action="<?=$base;?>/novacidade">
                 <div class="card-body">
-                  <div class="form-group">
-                    <label for="codigo">Código</label>
-                    <input type="number" class="form-control" id="codigo" placeholder="Seu Código">
-                  </div>
+               
                   <div class="form-group">
                     <label for="uf">UF</label>
-                    <input type="text" class="form-control" id="uf" placeholder="UF">
+                    <input type="text" class="form-control" name="uf"  placeholder="UF">
                   </div>
                   <div class="form-group">
                     <label for="nome">Nome</label>
-                    <input type="text" class="form-control" id="nome" placeholder="nome">
+                    <input type="text" class="form-control" name="nome"  placeholder="nome">
                   </div>
                   
             
