@@ -1,11 +1,3 @@
-<?php 
-
-
-$sql = $pdo->query("SELECT * FROM cad_cidade");
-$cad_cidade = $sql->fetchAll();
-?>
-
-
 <?php $render('header-principal'); ?>
 <?php $render('navbar-header-principal'); ?>
 <?php $render('navbar-sidebar-principal'); ?>
@@ -364,14 +356,19 @@ $cad_cidade = $sql->fetchAll();
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
-                                                                <?php  foreach($cad_cidade as $cad_cidade); ?>
+                                                              
                                                                     <tr>
-                                                                        <td data-toggle="modal" data-target="#modal-editar"><?php echo $cad_cidade['codigo'] ?></td>
-                                                                        <td data-toggle="modal" data-target="#modal-editar"><?php echo $cad_cidade['uf'] ?></td>
-                                                                        <td data-toggle="modal" data-target="#modal-editar"><?php echo $cad_cidade['nome'] ?></td>
+                                                                    <td data-toggle="modal" data-target="#modal-editar">
+                                                                            1200013
+                                                                        </td>
+                                                                        <td data-toggle="modal" data-target="#modal-editar">AC</td>
+                                                                        <td data-toggle="modal" data-target="#modal-editar">
+                                                                            Acrelândia
+                                                                        </td>
                                                                         <td data-toggle="modal" data-target="#modal-editar">
 
                                                                         </td>
+                                                                    </tr>
                                                                     
                                                                     </tr>
                                                                     <tr>
