@@ -1,4 +1,4 @@
-chamadas de botão excluir
+//chamadas de botão excluir
 
 $('#editar').on('click', function() {
     swal.fire(
@@ -27,3 +27,20 @@ $('#excluir').on('click', function() {
         }
     })
 })
+
+
+//verificação js
+
+// $("#submit").click(function() {
+//     var nome = $("#nome").val();
+//     var uf = $("#uf").val();
+//     if (nome == '' || uf == '') {
+
+//         Swal.fire(
+//             'Campos vazios ...',
+//             'Preencha os campos com valores ok?',
+//             'warning'
+//         )
+//     }
+
+// });

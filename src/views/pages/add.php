@@ -20,18 +20,18 @@
                
                   <div class="form-group">
                     <label for="uf">UF</label>
-                    <input type="text" class="form-control" name="uf"  placeholder="UF">
+                    <input type="text" class="form-control" name="uf" id="uf" placeholder="UF" required>
                   </div>
                   <div class="form-group">
                     <label for="nome">Nome</label>
-                    <input type="text" class="form-control" name="nome"  placeholder="nome">
+                    <input type="text" class="form-control" name="nome" id="nome" placeholder="nome" required>
                   </div>
                   
             
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Cadastrar</button>
+                  <button type="submit" id="submit" class="btn btn-primary">Cadastrar</button>
                 </div>
               </form>
             </div>
