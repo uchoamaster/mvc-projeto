@@ -43,10 +43,37 @@ class CidadesController extends Controller {
     }
 
     public function edit($args) {
+       // $cidade = Cidade::select()->where('codigo', $args['codigo'])->one();
+          $cidade = Cidade::select()->find($args['codigo']);
+
+        // print_r($cidade);
+        $this->render('edit', [
+            'cidade' => $cidade
+        ]);
 
     }
-    public function del($args){
+
+    public function editAction($args){
+        $uf = filter_input(INPUT_POST, 'uf');
+        $nome = filter_input(INPUT_POST, 'nome');
         
+        if ($uf && $nome) {
+
+            Cidade::update()
+                ->set('nome', $nome)
+                ->set('uf', $uf)
+                ->where('codigo', $args['codigo'])
+            ->execute();
+
+            $this->redirect('/');
+
+        }
+
+        $this->redirect('/cidade/'.$args['codigo'].'/editar');
+    }
+
+    public function del($args){
+
     }
 
  

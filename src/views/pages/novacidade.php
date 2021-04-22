@@ -39,10 +39,12 @@
                       <td><?=$cidade['codigo'];?></td>
                       <td><?=$cidade['uf'];?></td>
                       <td><?=$cidade['nome'];?></td>
-                      <td></td>
-                      <td> 
-                      <a href="<?=$base;?>/cidade/<?=$cidade['id'];?>/editar"><i class="fas fa-edit"></i> </a>
-                      <a href="<?=$base;?>/cidade/<?=$cidade['id'];?>/excluir"><i class="fas fa-trash"></i> </a>
+                      <td>
+                      <a href="<?=$base;?>/novacidade/editar/<?=$cidade['codigo'];?>"><i class="fas fa-edit"></i> </a>
+                      </td>
+               
+                      <td>
+                      <a href="<?=$base;?>/novacidade/excluir/<?=$cidade['codigo'];?>"><i class="fas fa-trash"></i> </a>
                       </td>
                       <!-- <td class="editar"><i class="fas fa-edit"></i></td>
                       <td class="excluir"><i class="fas fa-trash"></i></td> -->
@@ -50,6 +52,12 @@
                     <?php endforeach; ?>
                   </tbody>
                 </table>
+
+
+           
+                </div>
+                </div>
+
               </div>
               <!-- /.card-body -->
             </div>
@@ -58,6 +66,8 @@
         </div>
 
       </div>
+
+
 </section>
 </div>
 <?php $render('footer-principal'); ?>

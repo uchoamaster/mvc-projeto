@@ -26,8 +26,9 @@ $router->get('/add', 'CidadesController@add');
 $router->post('/novacidade', 'CidadesController@addAction');
 $router->get('/novacidade', 'CidadesController@novacidade');
 
-$router->get('/cidade/{id}/editar', 'CidadesController@edit');
-$router->get('/cidade/{id}/excluir', 'CidadesController@del');
+$router->get('/novacidade/editar/{codigo}', 'CidadesController@edit');
+$router->post('/novacidade/editar/{codigo}', 'CidadesController@editAction');
+$router->get('/novacidade/excluir/{codigo}', 'CidadesController@del');
 
 
 
