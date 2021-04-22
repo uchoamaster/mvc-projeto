@@ -42,6 +42,13 @@ class CidadesController extends Controller {
         $this->redirect('/add');
     }
 
+    public function edit($args) {
+
+    }
+    public function del($args){
+        
+    }
+
  
 
 }

@@ -1,6 +1,6 @@
 //chamadas de botão excluir
 
-$('#editar').on('click', function() {
+$('.editar').on('click', function() {
     swal.fire(
         'Muito bom!',
         'Você deseja editar este arquivo?',
@@ -8,7 +8,7 @@ $('#editar').on('click', function() {
     )
 })
 
-$('#excluir').on('click', function() {
+$('.excluir').on('click', function() {
     Swal.fire({
         title: 'Você tem certeza?',
         text: "Ao aceitar vai perder os dados",
@@ -27,20 +27,3 @@ $('#excluir').on('click', function() {
         }
     })
 })
-
-
-//verificação js
-
-// $("#submit").click(function() {
-//     var nome = $("#nome").val();
-//     var uf = $("#uf").val();
-//     if (nome == '' || uf == '') {
-
-//         Swal.fire(
-//             'Campos vazios ...',
-//             'Preencha os campos com valores ok?',
-//             'warning'
-//         )
-//     }
-
-// });
