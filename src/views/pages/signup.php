@@ -25,7 +25,7 @@
 
       <form action="<?=$base;?>/signup" method="post">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Full name">
+          <input type="text" class="form-control" placeholder="Nome Completo" name="nome">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -33,7 +33,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="email" class="form-control" placeholder="Email" name="email">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -41,7 +41,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" placeholder="Sua Senha" name="senha">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -49,13 +49,14 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Retype password">
+          <input type="birthdate" class="form-control" placeholder="Data de Nascimento" name="birthdate" id="birthdate">
           <div class="input-group-append">
             <div class="input-group-text">
-              <span class="fas fa-lock"></span>
+              <span class="fas fa-calendar"></span>
             </div>
           </div>
         </div>
+
 
           <!-- /.col -->
           <div class="col-4">
@@ -78,5 +79,15 @@
 <script src="<?=$base;?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="<?=$base;?>/dist/js/adminlte.min.js"></script>
+<script src="https://unpkg.com/imask"></script>
+<script>
+IMask(
+  document.getElementById('birthdate'),
+  {
+    mask:'00/00/0000'
+  }
+);
+</script>
+
 </body>
 </html>
