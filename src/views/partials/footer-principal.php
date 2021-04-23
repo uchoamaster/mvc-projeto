@@ -61,16 +61,17 @@
             </script>
             <!-- jQuery -->
             <script src="<?=$base;?>/plugins/jquery/jquery.min.js"></script>
+            <!-- jQuery UI -->
+            <script src="<?=$base;?>/plugins/jquery-ui/jquery-ui.min.js"></script>
+            <!-- AdminLTE for demo purposes -->
+            <script src="<?=$base;?>/dist/js/demo.js"></script>
             <!-- Bootstrap 4 -->
             <script src="<?=$base;?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
             <!-- AdminLTE App -->
             <script src="<?=$base;?>/dist/js/adminlte.min.js"></script>
             <!-- script.js -->
             <script type="text/javascript" src="<?=$base;?>/dist/js/script.js"></script>
-                        <!-- jQuery UI -->
-            <script src="<?=$base;?>/plugins/jquery-ui/jquery-ui.min.js"></script>
-            <!-- AdminLTE for demo purposes -->
-            <script src="<?=$base;?>/dist/js/demo.js"></script>
+
 
             <!-- DataTables  & Plugins -->
             <script src="<?=$base;?>/plugins/datatables/jquery.dataTables.min.js"></script>

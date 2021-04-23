@@ -57,19 +57,18 @@ class CidadesController extends Controller {
         $uf = filter_input(INPUT_POST, 'uf');
         $nome = filter_input(INPUT_POST, 'nome');
         
-        if ($uf && $nome) {
-
+        if($uf && $nome) {
             Cidade::update()
                 ->set('nome', $nome)
                 ->set('uf', $uf)
                 ->where('codigo', $args['codigo'])
             ->execute();
 
-            $this->redirect('/');
+            $this->redirect('/novacidade');
 
         }
 
-        $this->redirect('/cidade/'.$args['codigo'].'/editar');
+        $this->redirect('/novacidade/editar/'.$args['codigo'].'');
     }
 
     public function del($args){
