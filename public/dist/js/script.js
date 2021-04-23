@@ -8,7 +8,8 @@ $('.editar').on('click', function() {
     )
 })
 
-$('.excluir').on('click', function() {
+function excluir() {
+
     Swal.fire({
         title: 'Você tem certeza?',
         text: "Ao aceitar vai perder os dados",
@@ -26,4 +27,4 @@ $('.excluir').on('click', function() {
             )
         }
     })
-})
+}

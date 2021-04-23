@@ -72,7 +72,8 @@ class CidadesController extends Controller {
     }
 
     public function del($args){
-
+        Cidade::delete()->where('codigo', $args['codigo'])->execute();
+        $this->redirect('/novacidade');
     }
 
  

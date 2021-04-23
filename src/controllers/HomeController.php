@@ -3,8 +3,20 @@ namespace src\controllers;
 
 use \core\Controller;
 
-class HomeController extends Controller {
+use \src\handlers\LoginHandler;
 
+class HomeController extends Controller {
+    //verifica se o user esta logado ou nao
+    private $loggedUser;
+
+    public function __construct(){
+        $this->loggedUser = LoginHandler::checkLogin();
+        if($this->loggedUser === false){
+            $this->redirect('/login');
+        }
+
+    }
+    
     public function index() {
         
         $this->render('home');

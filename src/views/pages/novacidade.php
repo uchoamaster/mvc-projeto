@@ -44,7 +44,7 @@
                       </td>
                
                       <td>
-                      <a href="<?=$base;?>/novacidade/excluir/<?=$cidade['codigo'];?>"><i class="fas fa-trash"></i> </a>
+                      <a href="<?=$base;?>/novacidade/excluir/<?=$cidade['codigo'];?>" onclick="return confirm ('Tem certeza que deseja excluir?')"><i class="fas fa-trash"></i> </a>
                       </td>
                       <!-- <td class="editar"><i class="fas fa-edit"></i></td>
                       <td class="excluir"><i class="fas fa-trash"></i></td> -->

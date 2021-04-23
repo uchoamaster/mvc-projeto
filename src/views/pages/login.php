@@ -9,7 +9,7 @@
     <div class="card-body">
       <p class="login-box-msg">coloque seu usuário e senha</p>
 
-      <form action="./../index3.html" method="post">
+      <form action="#" method="post">
         <div class="input-group mb-3">
           <input type="email" class="form-control" placeholder="Email">
           <div class="input-group-append">
@@ -37,7 +37,7 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Acessar</button>
+            <button type="submit" name="entrar" class="btn btn-primary btn-block">Acessar</button>
           </div>
           <!-- /.col -->
         </div>

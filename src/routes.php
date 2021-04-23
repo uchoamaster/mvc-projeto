@@ -20,7 +20,9 @@ $router->get('/agenda-pessoal', 'HomeController@agendapessoal');
 $router->get('/ajuda', 'HomeController@ajuda');
 
 //rotas Controller Home Login
-$router->get('/login', 'HomeController@login');
+$router->get('/login', 'LoginController@signin');
+
+
 //rotas Controller Cidade
 $router->get('/add', 'CidadesController@add');
 $router->post('/novacidade', 'CidadesController@addAction');
