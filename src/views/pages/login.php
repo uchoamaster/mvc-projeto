@@ -42,11 +42,13 @@
           <!-- /.col -->
           <div class="col-4">
             <button type="submit" name="entrar" class="btn btn-primary btn-block">Acessar</button>
+
           </div>
           <!-- /.col -->
         </div>
       </form>
-
+      <a href="<?=$base;?>/signup" class="text-center">Ainda não tem usuário?
+      </a>
     </div>
     <!-- /.card-body -->
   </div>

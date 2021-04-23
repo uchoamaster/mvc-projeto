@@ -20,7 +20,8 @@ $router->get('/agenda-pessoal', 'HomeController@agendapessoal');
 $router->get('/ajuda', 'HomeController@ajuda');
 
 //rotas Controller Home Login
-$router->get('/login', 'LoginController@signin');
+$router->get('/login', 'LoginController@signin'); 
+$router->get('/signup', 'LoginController@signup'); 
 $router->post('/login', 'LoginController@signinAction');
 
 

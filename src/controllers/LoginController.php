@@ -40,7 +40,7 @@ class LoginController extends Controller {
     }
 
     public function signup(){
-
+        $this->render('signup');
     }
 
 }
