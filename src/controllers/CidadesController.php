@@ -3,7 +3,19 @@ namespace src\controllers;
 
 use \core\Controller;
 use \src\models\Cidade;
+
+
+use \src\handlers\LoginHandler;
 class CidadesController extends Controller {
+    private $loggedUser;
+
+    public function __construct(){
+        $this->loggedUser = LoginHandler::checkLogin();
+        if($this->loggedUser === false){
+            $this->redirect('/login');
+        }
+
+    }
 
     public function add() {
         $this->render('add');

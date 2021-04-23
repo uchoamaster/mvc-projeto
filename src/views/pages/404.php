@@ -1,6 +1,5 @@
 <?php $render('header-principal'); ?>
-<?php $render('navbar-header-principal'); ?>
-<?php $render('navbar-sidebar-principal'); ?>
+
 
 
 
@@ -13,12 +12,7 @@
                         <div class="col-sm-6">
                
                         </div>
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="/mvc/public/index.php">Home</a></li>
-                                <li class="breadcrumb-item active">404 Página não existe</li>
-                            </ol>
-                        </div>
+
                     </div>
                 </div>
                 <!-- /.container-fluid -->
