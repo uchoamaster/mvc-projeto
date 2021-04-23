@@ -15,23 +15,24 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form role="form" method="POST" action="<?=$base;?>/cidade/<?=$cidade['codigo'];?></editar>
+              <form role="form" method="POST" action="<?=$base;?>/cidade/<?=$cidade['codigo'];?>/editar"
                 <div class="card-body">
                
                   <div class="form-group">
                     <label for="uf">UF</label>
-                    <input type="text" class="form-control"  value="<?php echo $cidade['uf'];?>" required>
+                    <input type="text" class="form-control" name="uf" value="<?=$cidade['uf'];?>" >
                   </div>
                   <div class="form-group">
                     <label for="nome">Nome</label>
-                    <input type="text" class="form-control"  value="<?php echo $cidade['nome'];?>" required>
+                    <input type="text" class="form-control" name="nome" value="<?=$cidade['nome'];?>" >
+                        
                   </div>
                   
             
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                  <button type="submit" id="submit" class="btn btn-primary">Editar</button>
+                  <button type="submit" id="submit" class="btn btn-primary">Salvar Modificação</button>
                 </div>
               </form>
             </div>
