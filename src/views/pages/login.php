@@ -8,10 +8,14 @@
     </div>
     <div class="card-body">
       <p class="login-box-msg">coloque seu usuário e senha</p>
-
-      <form action="#" method="post">
+    
+      <?php if(!empty($flash)):?>
+        <div class="flash">  <?php echo $flash; ?></div>
+        <?php endif;?>
+        
+      <form action="<?=$base;?>/login" method="post">
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="email" name="email" class="form-control" placeholder="Email">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -19,7 +23,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" name="senha" class="form-control" placeholder="Password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -51,10 +55,10 @@
 <!-- /.login-box -->
 
 <!-- jQuery -->
-<script src="../public/plugins/jquery/jquery.min.js"></script>
+<script src="<?=$base;?>/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="./../public/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?=$base;?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
-<script src="./../public/dist/js/adminlte.min.js"></script>
+<script src="<?=$base;?>/dist/js/adminlte.min.js"></script>
 </body>
 </html>

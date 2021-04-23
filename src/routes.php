@@ -21,6 +21,7 @@ $router->get('/ajuda', 'HomeController@ajuda');
 
 //rotas Controller Home Login
 $router->get('/login', 'LoginController@signin');
+$router->post('/login', 'LoginController@signinAction');
 
 
 //rotas Controller Cidade

@@ -16,7 +16,7 @@ class LoginHandler {
                 $loggedUser = new User();
                 $loggedUser->id = $data['id'];
                 $loggedUser->email = $data['email'];
-                $loggedUser->name = $data['name'];
+                $loggedUser->nome = $data['nome'];
 
                 return $loggedUser;
             }
@@ -26,4 +26,23 @@ class LoginHandler {
         return false;
     }
 
+    public static function verifyLogin($email, $senha){
+
+        $user = User::select()->where('email', '$email')->one();
+        if($user){
+            if(password_verify($senha , $user['senha'])) {
+               $token = md5(time().rand(0,9999).time());
+                User::update()
+                    ->set('token' , $token)
+                    ->where('email', $email)
+                ->execute();
+
+               return $token;
+            }
+        }else {
+            return false;
+        }
+    }
+
 }
+

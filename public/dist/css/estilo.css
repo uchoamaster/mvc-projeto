@@ -121,3 +121,11 @@ h3.m-0 {
 .table-bordered th {
     border: 1px solid rgb(222 226 230) !important;
 }
+
+.flash {
+    border: 2px solid red;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
