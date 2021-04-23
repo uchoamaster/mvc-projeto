@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 20-Abr-2021 às 13:23
+-- Tempo de geração: 23-Abr-2021 às 21:04
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.4.13
 
@@ -24,44 +24,87 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cad_cidade`
+-- Estrutura da tabela `cidades`
 --
 
-CREATE TABLE `cad_cidade` (
+CREATE TABLE `cidades` (
   `codigo` int(11) NOT NULL,
   `uf` varchar(2) NOT NULL,
   `nome` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `cad_cidade`
+-- Extraindo dados da tabela `cidades`
 --
 
-INSERT INTO `cad_cidade` (`codigo`, `uf`, `nome`) VALUES
-(1, 'RO', 'Porto Velho'),
-(2, 'RO', 'Jí-Paraná'),
-(3, 'SC', 'Itajaí'),
-(4, 'SC', 'Brusque');
+INSERT INTO `cidades` (`codigo`, `uf`, `nome`) VALUES
+(3, 'SC', 'Itajaí Alterado 5'),
+(4, 'SC', 'Brusque'),
+(5, 'RO', 'Cacoal'),
+(6, 'SC', 'Joinville'),
+(7, 'RJ', 'Rio de Janeiro'),
+(8, 'RO', 'Porto Velho2'),
+(9, 'SC', 'Timbó2'),
+(10, 'AM', 'Manaus'),
+(11, 'RO', 'Guajará-mirim'),
+(13, 'RO', 'pimenta bueno'),
+(14, 'SC', 'Blumenau'),
+(16, 'AC', 'Acre'),
+(17, 'RO', 'Candeias'),
+(18, 'MG', 'Minas Gerais'),
+(19, 'SP', 'São Paulo'),
+(21, 'RO', 'Presidente Médici');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(100) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `senha` varchar(100) NOT NULL,
+  `data_aniversario` date NOT NULL,
+  `cidade` varchar(100) NOT NULL,
+  `trabalho` varchar(100) NOT NULL,
+  `avatar` varchar(100) NOT NULL,
+  `cover` varchar(100) NOT NULL,
+  `token` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Índices para tabelas despejadas
 --
 
 --
--- Índices para tabela `cad_cidade`
+-- Índices para tabela `cidades`
 --
-ALTER TABLE `cad_cidade`
+ALTER TABLE `cidades`
   ADD PRIMARY KEY (`codigo`);
+
+--
+-- Índices para tabela `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT de tabela `cad_cidade`
+-- AUTO_INCREMENT de tabela `cidades`
 --
-ALTER TABLE `cad_cidade`
-  MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+ALTER TABLE `cidades`
+  MODIFY `codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
+--
+-- AUTO_INCREMENT de tabela `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
