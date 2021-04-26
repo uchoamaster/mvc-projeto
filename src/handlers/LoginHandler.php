@@ -58,12 +58,13 @@ class LoginHandler {
             'email'=> $email,
             'senha'=> $hash,
             'nome'=>$nome,
-            'birthdate'=> $birthdate,
+            'data_aniversario'=> $birthdate,
             'token'=> $token
         ])->execute();
 
         return $token;
     }
+
 
 }
 

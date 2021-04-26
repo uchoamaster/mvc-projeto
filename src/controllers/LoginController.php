@@ -4,7 +4,7 @@ namespace src\controllers;
 use \core\Controller;
 
 
-use src\handlers\LoginHandler as HandlersLoginHandler;
+use src\handlers\LoginHandler;
 
 class LoginController extends Controller {
 
@@ -26,7 +26,7 @@ class LoginController extends Controller {
 
        if($email  && $senha ){
 
-        $token = HandlersLoginHandler::verifyLogin($email, $senha);
+        $token = LoginHandler::verifyLogin($email, $senha);
         if($token){
             $_SESSION['token'] = $token;
             $this->$this->redirect('/');
@@ -56,22 +56,23 @@ class LoginController extends Controller {
                 $this->redirect('/signup');
             }
 
-                $birthdate = $birthdate[2].'-'.$birthdate[1].'-'.$birthdate[0];
-                if(strtotime($birthdate) === false) {
-                    $_SESSION['flash'] =  'Data de nascimento inválida!';
-                    $this->redirect('/signup');
-                } 
+            $birthdate = $birthdate[2].'-'.$birthdate[1].'-'.$birthdate[0];
+            if(strtotime($birthdate) === false) {
+                $_SESSION['flash'] =  'Data de nascimento inválida!';
+                $this->redirect('/signup');
+            } 
                 
-                if(HandlersLoginHandler::emailExists($email) === false) {
-                   $token =  HandlersLoginHandler::addUser($nome, $email, $senha, $birthdate);
-                   $_SESSION['token'] = $token;
-                   $this->redirect('/');
-                }else {
-                    $_SESSION['flash'] = 'E-mail já cadastrado!';
-                    $this->redirect('/signup');
+            if(LoginHandler::emailExists($email) === false) {
+                $token =  LoginHandler::addUser($nome, $email, $senha, $birthdate);
+                $_SESSION['token'] = $token;
+                // print_r($_POST);
+                $this->redirect('/');
+            }else {
+                $_SESSION['flash'] = 'E-mail já cadastrado!';
+                $this->redirect('/signup');
                 }
         }else {
-            $this->redirect('/signup');
+                $this->redirect('/signup');
         }
     }
 
