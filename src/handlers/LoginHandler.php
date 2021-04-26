@@ -7,22 +7,20 @@ class LoginHandler {
     
     public static function checkLogin(){
         if(!empty($_SESSION['token'])) {
-
             $token = $_SESSION['token'];
-            
-            $data = User::select()->where('token',$token)->execute();
-            if(count($data) > 0) {
-
+            $data = User::select()->where('token',$token)->one();
+          
+            if(!empty($data) > 0) {
                 $loggedUser = new User();
                 $loggedUser->id = $data['id'];
-                $loggedUser->email = $data['email'];
                 $loggedUser->nome = $data['nome'];
-
+                $loggedUser->email = $data['email'];
                 return $loggedUser;
+                 
             }
 
         }
-
+        // print_r($data);
         return false;
     }
 
@@ -43,6 +41,27 @@ class LoginHandler {
             return false;
         }
     }
+
+    public static function emailExists($email) {
+        $user = User::select()->where('email', $email)->one();
+        return $user ? true : false;
+    }
+
+    public static function addUser($nome, $email, $senha, $birthdate){
+        $hash = password_hash($senha, PASSWORD_DEFAULT);
+        $token =  md5(time().rand(0,9999).time());
+
+        User::insert([
+            'email'=> $email,
+            'senha'=> $hash,
+            'nome'=>$nome,
+            'data_aniversario'=> $birthdate,
+            'token'=> $token
+        ])->execute();
+
+        return $token;
+    }
+
 
 }
 
