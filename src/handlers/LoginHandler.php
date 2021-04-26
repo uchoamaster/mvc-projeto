@@ -15,8 +15,9 @@ class LoginHandler {
 
                 $loggedUser = new User();
                 $loggedUser->id = $data['id'];
-                $loggedUser->email = $data['email'];
                 $loggedUser->nome = $data['nome'];
+                $loggedUser->email = $data['email'];
+                
 
                 return $loggedUser;
             }
@@ -60,6 +61,7 @@ class LoginHandler {
             'birthdate'=> $birthdate,
             'token'=> $token
         ])->execute();
+
         return $token;
     }
 
