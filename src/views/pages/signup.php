@@ -49,7 +49,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="birthdate" class="form-control" placeholder="Data de Nascimento" name="birthdate" id="birthdate">
+          <input type="text" class="form-control" placeholder="Data de Nascimento" name="birthdate" id="birthdate">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-calendar"></span>
