@@ -153,13 +153,14 @@ sup {
     height: 100vh;
     -ms-flex-pack: center;
     justify-content: center;
-    background-image: url(http://localhost/mvc/public/dist/img/2-min.jpg);
+    background-image: url(http://localhost/mvc/public/dist/img/3.jpg);
     background-position: center;
     /* Center the image */
     background-repeat: no-repeat;
     /* Do not repeat the image */
     background-size: cover;
     /* Resize the background image to cover the entire container */
+    background-color: rgba(113, 173, 200, 0.8);
 }
 
 .login-page img {
