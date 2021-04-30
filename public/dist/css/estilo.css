@@ -129,3 +129,39 @@ h3.m-0 {
     padding: 10px;
     margin-bottom: 10px;
 }
+
+sup {
+    top: -1.5em !important;
+}
+
+.card-header:hover {
+    color: #000 !important;
+}
+
+.card-header a {
+    color: #000;
+}
+
+.login-page,
+.register-page {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-image: url(http://localhost/mvc/public/dist/img/2-min.jpg);
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+.login-page img {
+    filter: blur(20px);
+}

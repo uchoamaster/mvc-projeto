@@ -4,7 +4,12 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a  class="h1"><b>$</b>IMPLES</a>
+      <a  class="h1"><b style="color:red;">$</b><span style="color: gray">IMPLES</span><sup style="color: blue; font-size:1rem; font-weight: bold; margin-top:-40px;">ERP</sup></a><br>
+      <a  class="h6"><b>12.02.00</b></a><br>
+    </div>
+    <div class="card-header text-center">
+    <a  class="h6"><b>45.234.2334.2334.0001-00</b></a><br>
+      <a  class="h6"><b>TECH STORE</b></a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">coloque seu usuário e senha</p>
@@ -15,10 +20,10 @@
         
       <form action="<?=$base;?>/login" method="post">
         <div class="input-group mb-3">
-          <input type="email" name="email" class="form-control" placeholder="Email">
+          <input type="email" name="email" class="form-control" placeholder="Email" autofocus>
           <div class="input-group-append">
             <div class="input-group-text">
-              <span class="fas fa-envelope"></span>
+              <span class="fas fa-user"></span>
             </div>
           </div>
         </div>
@@ -32,12 +37,7 @@
         </div>
         <div class="row">
           <div class="col-8">
-            <div class="icheck-primary">
-              <input type="checkbox" id="remember">
-              <label for="remember">
-                Lembrar-me
-              </label>
-            </div>
+   
           </div>
           <!-- /.col -->
           <div class="col-4">
@@ -47,8 +47,7 @@
           <!-- /.col -->
         </div>
       </form>
-      <a href="<?=$base;?>/signup" class="text-center">Ainda não tem usuário?
-      </a>
+    
     </div>
     <!-- /.card-body -->
   </div>
