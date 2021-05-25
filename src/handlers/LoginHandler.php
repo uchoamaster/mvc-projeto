@@ -6,15 +6,14 @@ use \src\models\User;
 class LoginHandler {
     
     public static function checkLogin(){
-        if(!empty($_SESSION['token'])) {
-            $token = $_SESSION['token'];
-            $data = User::select()->where('token',$token)->one();
+        if(!empty($_SESSION['Token'])) {
+            $token = $_SESSION['Token'];
+            $data = Usuario::select()->where('Token',$token)->one();
           
             if(!empty($data) > 0) {
-                $loggedUser = new User();
-                $loggedUser->id = $data['id'];
-                $loggedUser->nome = $data['nome'];
-                $loggedUser->email = $data['email'];
+                $loggedUser = new Usuario();
+                $loggedUser->nome = $data['Nome'];
+                $loggedUser->usuario = $data['Usuario'];
                 return $loggedUser;
                  
             }
@@ -24,15 +23,15 @@ class LoginHandler {
         return false;
     }
 
-    public static function verifyLogin($email, $senha){
+    public static function verifyLogin($usuario, $senha){
 
-        $user = User::select()->where('email', $email)->one();
-        if($user){
-            if(password_verify($senha , $user['senha'])) {
+        $usuario = Usuario::select()->where('Usuario', $usuario)->one();
+        if($usuario){
+            if(password_verify($senha , $usuario['Senha'])) {
                $token = md5(time().rand(0,9999).time());
-                User::update()
-                    ->set('token' , $token)
-                    ->where('email', $email)
+                Usuario::update()
+                    ->set('Token' , $token)
+                    ->where('Usuario', $usuario)
                 ->execute();
 
                return $token;
@@ -42,21 +41,20 @@ class LoginHandler {
         }
     }
 
-    public static function emailExists($email) {
-        $user = User::select()->where('email', $email)->one();
-        return $user ? true : false;
+    public static function emailExists($usuario) {
+        $usuario = Usuario::select()->where('Usuario', $usuario)->one();
+        return $usuario ? true : false;
     }
 
-    public static function addUser($nome, $email, $senha, $birthdate){
+    public static function addUser($usuario, $nome, $senha){
         $hash = password_hash($senha, PASSWORD_DEFAULT);
         $token =  md5(time().rand(0,9999).time());
 
-        User::insert([
-            'email'=> $email,
-            'senha'=> $hash,
-            'nome'=>$nome,
-            'data_aniversario'=> $birthdate,
-            'token'=> $token
+        Usuario::insert([
+            'Usuario'=> $usuario,
+            'Nome'=> $nome,
+            'Senha'=>$hash,
+            'Token'=> $token
         ])->execute();
 
         return $token;
