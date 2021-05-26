@@ -20,7 +20,7 @@
         
       <form action="<?=$base;?>/login" method="post">
         <div class="input-group mb-3">
-          <input type="email" name="email" class="form-control" placeholder="Email" autofocus>
+          <input type="text" name="Usuario" class="form-control" placeholder="Usuario" autofocus>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" name="senha" class="form-control" placeholder="Password">
+          <input type="password" name="Senha" class="form-control" placeholder="Senha">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>

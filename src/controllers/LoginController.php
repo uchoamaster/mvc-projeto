@@ -21,18 +21,20 @@ class LoginController extends Controller {
     }
     
     public function signinAction(){
-       $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-       $senha = filter_input(INPUT_POST, 'senha');
+    //    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 
-       if($email  && $senha ){
+       $usuario = filter_input(INPUT_POST, 'Usuario');
+       $senha = filter_input(INPUT_POST, 'Senha');
 
-        $token = LoginHandler::verifyLogin($email, $senha);
+       if($usuario  && $senha ){
+
+        $token = LoginHandler::verifyLogin($usuario, $senha);
         if($token){
-            $_SESSION['token'] = $token;
+            $_SESSION['Token'] = $token;
             //  print_r($_POST);
             $this->redirect('/');
         }else{
-            $_SESSION['flash'] = 'E-mail ou senha não conferem.';
+            $_SESSION['flash'] = 'usuário ou senha não conferem.';
             $this->redirect('/login');
             //  print_r($_POST);
             }
@@ -47,36 +49,18 @@ class LoginController extends Controller {
     }
 
     public function signupAction(){
-        $nome = filter_input(INPUT_POST, 'nome');
-        $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-        $senha = filter_input(INPUT_POST, 'senha');
-        $birthdate = filter_input(INPUT_POST, 'birthdate');
+        $usuario = filter_input(INPUT_POST, 'Usuario');
+        $senha = filter_input(INPUT_POST, 'Senha');
+       
 
-        if ($nome && $email  && $senha && $birthdate) {
-            $birthdate = explode('/', $birthdate);
-            if(count($birthdate) != 3){
-                $_SESSION['flash'] = 'Data de nascimento inválida!';
-                $this->redirect('/signup');
-            }
-
-            $birthdate = $birthdate[2].'-'.$birthdate[1].'-'.$birthdate[0];
-            if(strtotime($birthdate) === false) {
-                $_SESSION['flash'] =  'Data de nascimento inválida!';
-                $this->redirect('/signup');
-            } 
                 
-            if(LoginHandler::emailExists($email) === false) {
-                $token =  LoginHandler::addUser($nome, $email, $senha, $birthdate);
-                $_SESSION['token'] = $token;
-                // print_r($_POST);
+            if(LoginHandler::emailExists($usuario) === false) {
+                $token =  LoginHandler::addUser($usuario, $senha);
+                $_SESSION['Token'] = $token;
                 $this->redirect('/');
             }else {
                 $_SESSION['flash'] = 'E-mail já cadastrado!';
                 $this->redirect('/signup');
             }
-        }else {
-                $this->redirect('/signup');
         }
     }
-
-}
