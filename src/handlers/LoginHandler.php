@@ -1,7 +1,7 @@
 <?php
 namespace src\handlers;
 
-use \src\models\Usuario;
+use \src\models\User;
 
 class LoginHandler {
     

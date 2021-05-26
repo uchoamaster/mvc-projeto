@@ -2,6 +2,6 @@
 namespace src\models;
 use \core\Model;
 
-class Usuario extends Model {
+class User extends Model {
     
 }
