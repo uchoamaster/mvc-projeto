@@ -15,12 +15,24 @@
                 <div class="card-body">
                
                   <div class="form-group">
-                    <label for="uf">UF</label>
-                    <input type="text" class="form-control" name="uf" id="uf" placeholder="UF" required>
+                    <label for="Codigo_Cidade">Código da Cidade</label>
+                    <input type="text" class="form-control" name="Codigo_Cidade" id="Codigo_Cidade" placeholder="Codigo da Cidade" required>
                   </div>
                   <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <input type="text" class="form-control" name="nome" id="nome" placeholder="nome" required>
+                    <label for="Codigo_Pais">Código do País</label>
+                    <input type="text" class="form-control" name="Codigo_Pais" id="Codigo_Pais" placeholder="Codigo do País" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="UF">UF</label>
+                    <input type="text" class="form-control" name="UF" id="UF" placeholder="UF" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="Nome">Nome</label>
+                    <input type="text" class="form-control" name="Nome" id="Nome" placeholder="Nome" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="Situacao">Situação</label>
+                    <input type="text" class="form-control" name="Situacao" id="Situacao" placeholder="Situacão" required>
                   </div>
                   
             

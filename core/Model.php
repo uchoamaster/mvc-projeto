@@ -33,7 +33,8 @@ class Model {
     public static function getTableName() {
         $className = explode('\\', get_called_class());
         $className = end($className);
-        return strtolower($className).'s';
+        return ($className);
+        // return strtolower($className).'s'; removi esta linha com o S que ele alterava as tabelas e acrescentava um 'S' para deixar as tabelas no plural além de strtolower deixar tudo minusculas
     }
 
     public static function select($fields = []) {

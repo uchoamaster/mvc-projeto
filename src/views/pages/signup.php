@@ -25,7 +25,7 @@
 
       <form action="<?=$base;?>/signup" method="post">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Nome Completo" name="nome">
+          <input type="text" class="form-control" placeholder="Nome Completo" name="Nome">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -33,40 +33,38 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email" name="email">
+          <input type="text" class="form-control" placeholder="Usuario" name="Usuario">
           <div class="input-group-append">
             <div class="input-group-text">
-              <span class="fas fa-envelope"></span>
+              <span class="fas fa-user"></span>
             </div>
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Sua Senha" name="senha">
+          <input type="password" class="form-control" placeholder="Sua Senha" name="Senha">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
             </div>
           </div>
         </div>
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Data de Nascimento" name="birthdate" id="birthdate">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-calendar"></span>
-            </div>
-          </div>
-        </div>
+
 
 
           <!-- /.col -->
           <div class="col-4">
             <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+        
           </div>
+          <div class="col-12">
+          <a href="<?=$base;?>/login" class="text-center">Você ja tem uma conta?
+      </a>
+      </div>
           <!-- /.col -->
         </div>
+    
       </form>
-      <a href="<?=$base;?>/login" class="text-center">Você ja tem uma conta?
-      </a>
+     
     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->

@@ -5,6 +5,26 @@
             <script src="https://unpkg.com/draggabilly@2.2.0/dist/draggabilly.pkgd.min.js"></script>
             <script src="<?=$base;?>/dist/js/chrome-tabs.js"></script>
             <script>
+                $(function () {
+                    $("#example1").DataTable({
+                    "responsive": true, "lengthChange": false, "autoWidth": false,
+                    "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+                    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+                    $("#example1").DataTable({
+                    "paging": true,
+                    "lengthChange": false,
+                    "searching": false,
+                    "ordering": true,
+                    "info": true,
+                    "processing": true,
+                    "serverSide": true,
+                    "ajax": "scripts/server_processing.php",
+                    "autoWidth": false,
+                    "responsive": true,
+                    });
+                });
+            </script>
+            <script>
                 var el = document.querySelector('.chrome-tabs')
                 var chromeTabs = new ChromeTabs()
 

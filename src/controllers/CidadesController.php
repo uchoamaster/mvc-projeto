@@ -7,11 +7,11 @@ use \src\models\Cidade;
 
 use \src\handlers\LoginHandler;
 class CidadesController extends Controller {
-    private $loggedUser;
+    private $loggedUsuario;
 
     public function __construct(){
-        $this->loggedUser = LoginHandler::checkLogin();
-        if($this->loggedUser === false){
+        $this->loggedUsuario = LoginHandler::checkLogin();
+        if($this->loggedUsuario === false){
             $this->redirect('/login');
         }
 
@@ -32,17 +32,23 @@ class CidadesController extends Controller {
     public function addAction(){
 
        
-        $uf = filter_input(INPUT_POST, 'uf');
-        $nome = filter_input(INPUT_POST, 'nome');
+        $cod_cidade = filter_input(INPUT_POST, 'Codigo_Cidade');
+        $uf = filter_input(INPUT_POST, 'UF');
+        $nome = filter_input(INPUT_POST, 'Nome');
+        $situacao = filter_input(INPUT_POST, 'Situacao');
+       
 
-        if( $uf && $nome){
-            $data = Cidade::select()->where('nome', $nome)->execute();
+        if(  $uf && $nome && $situacao ){
+            $data = Cidade::select()->where('Codigo_Cidade', $cod_cidade)->execute();
 
             if(count($data) === 0) {
                 //insere
                 Cidade::insert([
-                    'uf' => $uf,
-                    'nome' => $nome
+                    
+                    'UF'            => $uf,
+                    'Nome'          => $nome,
+                    'Situacao'      => $situacao
+                
                 ])->execute();
                 //redirect para / se salvar corretamente no bd
                 $this->redirect('/novacidade');
@@ -56,7 +62,7 @@ class CidadesController extends Controller {
 
     public function edit($args) {
     //    $cidade = Cidade::select()->where('codigo', $args['codigo'])->execute();
-    $cidade = Cidade::select()->find($args['codigo'], "codigo");
+    $cidade = Cidade::select()->find($args['Codigo_Cidade'], "Codigo_Cidade");
 
         //   print_r($cidade);
         $this->render('edit', [
@@ -66,25 +72,29 @@ class CidadesController extends Controller {
     }
 
     public function editAction($args){
-        $uf = filter_input(INPUT_POST, 'uf');
-        $nome = filter_input(INPUT_POST, 'nome');
+      
+        $uf = filter_input(INPUT_POST, 'UF');
+        $nome = filter_input(INPUT_POST, 'Nome');
+        $situacao = filter_input(INPUT_POST, 'Situacao');
+
         
-        if($uf && $nome) {
+        if( $uf && $nome && $situacao ) {
             Cidade::update()
-                ->set('nome', $nome)
-                ->set('uf', $uf)
-                ->where('codigo', $args['codigo'])
+                ->set('UF', $uf)
+                ->set('Nome', $nome)
+                ->set('Situacao', $situacao)
+                ->where('Codigo_Cidade', $args['Codigo_Cidade'])
             ->execute();
 
             $this->redirect('/novacidade');
 
         }
 
-        $this->redirect('/novacidade/editar/'.$args['codigo'].'');
+        $this->redirect('/novacidade/editar/'.$args['Codigo_Cidade'].'');
     }
 
     public function del($args){
-        Cidade::delete()->where('codigo', $args['codigo'])->execute();
+        Cidade::delete()->where('Codigo_Cidade', $args['Codigo_Cidade'])->execute();
         $this->redirect('/novacidade');
     }
 

@@ -18,15 +18,20 @@
               <form role="form" method="POST" action="<?=$base;?>/novacidade">
                 <div class="card-body">
                
+           
                   <div class="form-group">
-                    <label for="uf">UF</label>
-                    <input type="text" class="form-control" name="uf" id="uf" placeholder="UF" required>
+                    <label for="UF">UF</label>
+                    <input type="text" class="form-control" name="UF" id="UF" placeholder="UF" required>
                   </div>
                   <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <input type="text" class="form-control" name="nome" id="nome" placeholder="nome" required>
+                    <label for="Nome">Nome</label>
+                    <input type="text" class="form-control" name="Nome" id="Nome" placeholder="Nome" required>
                   </div>
-                  
+                  <div class="form-group">
+                    <label for="Situacao">Situação</label>
+                    <input type="text" class="form-control" name="Situacao" id="Situacao" placeholder="Situacão" required>
+                  </div>
+            
             
                 <!-- /.card-body -->
 

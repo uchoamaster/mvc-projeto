@@ -42,8 +42,12 @@
           <!-- /.col -->
           <div class="col-4">
             <button type="submit" name="entrar" class="btn btn-primary btn-block">Acessar</button>
-
+            
+          
+      </a>
+      
           </div>
+          <a href="<?=$base;?>/signup" class="text-center">Criar uma  conta?
           <!-- /.col -->
         </div>
       </form>

@@ -35,13 +35,11 @@
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+                      
                         <li class="nav-item menu-open">
 
                             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                                <!-- Add icons to the links using the .nav-icon class
-                   with font-awesome or any other icon font library -->
+                                
                                 <li class="nav-item menu-open">
 
                                     <ul class="nav nav-treeview">
@@ -59,7 +57,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="<?=$base;?>/add" class="nav-link">
+                                    <a href="<?=$base;?>/novacidade" class="nav-link">
                                         <i class="nav-icon far fa-address-card"></i>
                                         <p>
                                             Cadastro Add
@@ -146,6 +144,14 @@
                                         <i class="nav-icon fas fa-question-circle"></i>
                                         <p>
                                             Ajuda
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<?=$base;?>/login" class="nav-link">
+                                        <i class="nav-icon fas fa-sign-out-alt mr-2"></i>
+                                        <p>
+                                            Sair
                                         </p>
                                     </a>
                                 </li>

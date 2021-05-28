@@ -28,19 +28,16 @@ class LoginController extends Controller {
 
        if($usuario  && $senha ){
 
-        $token = LoginHandler::verifyLogin($usuario, $senha);
+        $token = LoginHandler::verifyUsuario($usuario, $senha);
         if($token){
             $_SESSION['Token'] = $token;
-            //  print_r($_POST);
             $this->redirect('/');
         }else{
             $_SESSION['flash'] = 'usuário ou senha não conferem.';
             $this->redirect('/login');
-            //  print_r($_POST);
             }
        }else {
             $this->redirect('/login');
-            print_r($_POST);
        }
     }
 
@@ -54,12 +51,12 @@ class LoginController extends Controller {
        
 
                 
-            if(LoginHandler::emailExists($usuario) === false) {
-                $token =  LoginHandler::addUser($usuario, $senha);
+            if(LoginHandler::usuarioExists($usuario) === false) {
+                $token =  LoginHandler::addUsuario($usuario, $senha);
                 $_SESSION['Token'] = $token;
                 $this->redirect('/');
             }else {
-                $_SESSION['flash'] = 'E-mail já cadastrado!';
+                $_SESSION['flash'] = 'Usuário  já cadastrado!';
                 $this->redirect('/signup');
             }
         }
